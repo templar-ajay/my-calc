@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>calc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41f1e86e1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div id = "left-block">
+                <button id = "fa-logs" onclick="openLog()"></button>
+                <button id = "fa-copy" onclick="copy()"></button>
+            </div>
+            <h3 id="display"></h3>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <td onclick="allClear()">C</td>
+                <td onclick="del()"><i class="fa-solid fa-delete-left"></i></td>
+                <td onclick="send('%')">&percnt;</td>
+                <td onclick="send('/')"><i class="fa-solid fa-divide"></i></td>
+            </tr><tr>
+                <td onclick="send('7')">7</td>
+                <td onclick="send('8')">8</td>
+                <td onclick="send('9')">9</td>
+                <td onclick="send('*')"><i class="fa-solid fa-xmark"></i></td>
+            </tr><tr>
+                <td onclick="send('4')">4</td>
+                <td onclick="send('5')">5</td>
+                <td onclick="send('6')">6</td>
+                <td onclick="send('-')"><i class="fa-solid fa-minus"></i></td>
+            </tr><tr>
+                <td onclick="send('1')">1</td>
+                <td onclick="send('2')">2</td>
+                <td onclick="send('3')">3</td>
+                <td onclick="send('+')"><i class="fa-solid fa-plus"></i></td>
+            </tr><tr>
+                <td onclick="send('0')">0</td>
+                <td onclick="send('.')">.</td>
+                <!-- <td onclick ="plusMinus()"><i class="fa-solid fa-plus-minus"></i></td> -->
+                <td onclick="equals()" colspan="2"><i class="fa-solid fa-equals"></i></i></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

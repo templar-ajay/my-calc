@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#window{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 280px;
+    margin-left: 500px;
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    background:rgb(5, 5, 5);
+}
+.container{
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(29, 200, 252);
+    height: 380px;
+    width: 300px;
+    margin: 6px auto;
+    border-radius: 10px;
+    display: block;
+}
+.row{
+    background-color: rgb(160, 221, 240) ;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+}
+
+#fa-logs , #fa-copy {
+    height: 35px;
+    width: 35px;
+    margin: 2.5px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+#fa-logs{
+    background: url("log.png") no-repeat center white;
+    background-size: 90%;
+}
+#fa-copy:active{
+    width: 30px;
+}
+#fa-logs:active{
+    width: 30px
+}
+#fa-copy{
+    background: url("copy.png") no-repeat center white;
+    background-size: 78% 
+}
+#display{
+    height: 80px;
+    width: 100%;
+    font-size: 50px;
+    text-align: right;
+    padding: 0 5px 0;
+}
+table{
+    border-collapse: collapse;
+    height: 300px;
+}
+table tr{
+    height: 50px;
+}
+table td{
+    width: 75px;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+table td:hover{
+    background-color: whitesmoke;
+    color:black
+}
+a{
+    text-decoration: none;
+}
+
