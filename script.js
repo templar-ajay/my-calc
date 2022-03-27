@@ -146,3 +146,9 @@ function openLog(){
     localStorage.setItem("InnerHtml",logInnerHTML)
     window.open("logs.html");
 }
+
+// Popup window code
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=380,width=300')
+}
