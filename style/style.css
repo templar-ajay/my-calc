@@ -30,7 +30,7 @@ a:active{
     text-shadow: none;
 }
 .container{
-    position: fixed;
+    position: relative;
     overflow: hidden;
     background-color: rgb(29, 200, 252);
     height: 380px;
@@ -93,7 +93,11 @@ table td:hover{
     background-color: whitesmoke;
     color:black
 }
-a{
-    text-decoration: none;
+
+/* for mobile devices */
+
+@media only screen and (max-width:800px){
+    
 }
+
 

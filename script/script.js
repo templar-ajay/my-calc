@@ -126,7 +126,7 @@ function ifFontChange(){
 }
 
 function display(){
-    ui()
+    // ui()
     operatorDisplay()
     Display.innerHTML = `${o1} ${a} ${displayOperator} ${b}`
     ifFontChange()
@@ -177,5 +177,5 @@ function openLog(){
 // Popup window code
 function newPopup(url) {
     popupWindow = window.open(
-        url,'popUpWindow','height=370,width=292')
+        url,'popUpWindow','height=380,width=300')
 }
