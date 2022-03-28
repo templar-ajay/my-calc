@@ -33,8 +33,8 @@ a:active{
     position: relative;
     overflow: hidden;
     background-color: rgb(29, 200, 252);
-    height: 380px;
-    width: 300px;
+    height: 96vh;
+    width: 75vh;
     margin: 6px auto;
     border-radius: 10px;
     display: block;
@@ -46,8 +46,8 @@ a:active{
 }
 
 #fa-logs , #fa-copy {
-    height: 35px;
-    width: 35px;
+    height: 9.2vh;
+    width: 9.2vh;
     margin: 2.5px;
     border-radius: 5px;
     border:none;
@@ -68,7 +68,7 @@ a:active{
     background-size: 78% 
 }
 #display{
-    height: 80px;
+    height: 20vh;
     width: 100%;
     font-size: 50px;
     text-align: right;
@@ -79,10 +79,10 @@ table{
     height: 300px;
 }
 table tr{
-    height: 50px;
+    height: 15vh;
 }
 table td{
-    width: 75px;
+    width: 24vh;
     text-align: center;
     border: 2px solid whitesmoke;
     cursor: pointer;
