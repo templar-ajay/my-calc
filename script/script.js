@@ -1,5 +1,6 @@
 // get display
 const Display = document.getElementById("display")
+// const keyboard =  document.getElementById("tr1")
 
 // declared variables
 let a = "";
@@ -11,9 +12,24 @@ let dotPresentB = false;
 let clipBoard;
 let logInnerHTML = '';
 let overflow = false;
+let displayOperator ="";
+display()
 
+//logic for UI
 
-//logic
+// function ui(){
+//     if((o1==""&&(a=="")){
+//         keyboard.innerHTML = "<three-el-wel>"
+//     }
+//     if(((o1!=="")&&(a==""))||((01=="")&&(a!==""))){
+//         keyboard.innerHTML = "<three-el>"
+//     }
+//     if ((a!=="")&&(o1!=="")||(a.length>2)||((a!=="")&&(operator2!==""))){
+//         keyboard.innerHTML = "<four-el>"
+//     }
+// }
+
+//logic for calc
 function send(i){
     if(!overflow){
 
@@ -48,7 +64,7 @@ function send(i){
         equals()
         a = Display.innerHTML;
         operator2 = i
-        // display()
+        display()
     }   
     }
 }
@@ -89,6 +105,7 @@ function clear(){
     o1 = ""
     dotPresentA = false
     dotPresentB = false
+    displayOperator = ""
 }
 function allClear(){
     clear()
@@ -109,11 +126,21 @@ function ifFontChange(){
 }
 
 function display(){
-    Display.innerHTML = `${o1} ${a} ${operator2} ${b}`
+    ui()
+    operatorDisplay()
+    Display.innerHTML = `${o1} ${a} ${displayOperator} ${b}`
     ifFontChange()
-    console.log(`${o1} ${a} ${operator2} ${b}`)
+    
+    console.log(`${o1} ${a} ${displayOperator} ${b}`)
     updateLog()
     
+}
+function operatorDisplay(){
+    if(operator2=="*"){
+        displayOperator = "x"
+    }else if(operator2=="/"){
+        displayOperator = "&divide;"
+    } else displayOperator = operator2
 }
 function del(){
             if(a){
@@ -150,5 +177,5 @@ function openLog(){
 // Popup window code
 function newPopup(url) {
     popupWindow = window.open(
-        url,'popUpWindow','height=380,width=300')
+        url,'popUpWindow','height=370,width=292')
 }

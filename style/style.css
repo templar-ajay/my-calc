@@ -2,19 +2,32 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 #window{
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 280px;
-    margin-left: 500px;
+    height:100%;
+    width: 100%;
 }
 a{
-    text-decoration: none;
-    font-size: xx-large;
+    font-size: 100px;
     color: white;
-    background:rgb(5, 5, 5);
+    background:grey;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.5s;
+}
+a:hover{
+    text-shadow: 3px 2px #000   ;
+    background: orange;
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    text-shadow: none;
 }
 .container{
     position: fixed;
@@ -41,7 +54,7 @@ a{
     cursor: pointer;
 }
 #fa-logs{
-    background: url("log.png") no-repeat center white;
+    background: url("../icons/log.png") no-repeat center white;
     background-size: 90%;
 }
 #fa-copy:active{
@@ -51,7 +64,7 @@ a{
     width: 30px
 }
 #fa-copy{
-    background: url("copy.png") no-repeat center white;
+    background: url("../icons/copy.png") no-repeat center white;
     background-size: 78% 
 }
 #display{

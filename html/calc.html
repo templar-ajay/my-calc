@@ -4,8 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>calc</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <script src="https://kit.fontawesome.com/41f1e86e1f.js" crossorigin="anonymous"></script>
+    <!-- <script src="customelCalc.js"></script> -->
 </head>
 <body>
     
@@ -19,17 +20,19 @@
         </div>
         <hr>
         <table>
-            <tr>
-                <td onclick="allClear()">C</td>
-                <td onclick="del()"><i class="fa-solid fa-delete-left"></i></td>
+            <tr id = "tr1">
+                <td id = "C" onclick="allClear()">C</td>
+                <td id = "delete-btn" onclick="del()"><i class="fa-solid fa-delete-left"></i></td>
                 <td onclick="send('%')">&percnt;</td>
                 <td onclick="send('/')"><i class="fa-solid fa-divide"></i></td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td onclick="send('7')">7</td>
                 <td onclick="send('8')">8</td>
                 <td onclick="send('9')">9</td>
                 <td onclick="send('*')"><i class="fa-solid fa-xmark"></i></td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td onclick="send('4')">4</td>
                 <td onclick="send('5')">5</td>
                 <td onclick="send('6')">6</td>
@@ -49,5 +52,7 @@
     </div>
     
 </body>
-<script src="script.js"></script>
+<script src="../script/script.js"></script>
 </html>
+
+<!--  -->
