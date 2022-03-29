@@ -35,7 +35,7 @@ a:active{
     background-color: rgb(29, 200, 252);
     height: 96vh;
     width: 75vh;
-    margin: 6px auto 20px;
+    margin: 6px auto;
     border-radius: 10px;
     display: block;
 }
