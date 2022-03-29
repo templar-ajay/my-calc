@@ -29,6 +29,18 @@ display()
 //     }
 // }
 
+// keypress event listener
+document.addEventListener("keypress" , (e) => {
+    if(e.key == "="){
+        equals()
+    }else if(e.key =="d"||e.key == "D"){
+        del();
+    }else if(e.key == "c"||e.key == "C"){
+        allClear();
+        console.log("esc clicked")
+    }else send(`${e.key}`)
+})
+
 //logic for calc
 function send(i){
     if(!overflow){
