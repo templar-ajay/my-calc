@@ -103,12 +103,12 @@ table td:hover{
 }
 @media only screen and (orientation:portrait) {
     .container{
-        height: 96vh;
-        width: 75vh;
+        height: 96vw;
+        width: 75vw;
     }
     #fa-logs , #fa-copy{
-        height: 9.2vh;
-        width: 9.2vh;
+        height: 9.2vw;
+        width: 9.2vw;
     }
     #fa-copy:active{
         width: 30px;
@@ -117,19 +117,19 @@ table td:hover{
         width: 30px
     }
     #display{
-        height: 20vh;
+        height: 20vw;
         font-size: 13.15vh;
-        padding: 2.63vh 1.32vh 0;
+        padding: 2.63vw 1.32vw 0;
     }
     table{
-        height: 76vh;
+        height: 76vw;
     }
     table tr{
-        height: 15vh;
+        height: 15vw;
     }
     table td{
-        width: 24vh;
-        font-size: 7vh;
+        width: 24vw;
+        font-size: 7vw;
     }
 }
 
