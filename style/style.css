@@ -102,7 +102,35 @@ table td:hover{
     }
 }
 @media only screen and (orientation:portrait) {
-    
+    .container{
+        height: 96vh;
+        width: 75vh;
+    }
+    #fa-logs , #fa-copy{
+        height: 9.2vh;
+        width: 9.2vh;
+    }
+    #fa-copy:active{
+        width: 30px;
+    }
+    #fa-logs:active{
+        width: 30px
+    }
+    #display{
+        height: 20vh;
+        font-size: 13.15vh;
+        padding: 2.63vh 1.32vh 0;
+    }
+    table{
+        height: 76vh;
+    }
+    table tr{
+        height: 15vh;
+    }
+    table td{
+        width: 24vh;
+        font-size: 7vh;
+    }
 }
 
 
