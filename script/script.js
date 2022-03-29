@@ -165,7 +165,6 @@ function del(){
 
             } else o1 = ''
     display()
-
 }
 
 function copy(){
