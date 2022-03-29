@@ -70,13 +70,13 @@ a:active{
 #display{
     height: 20vh;
     width: 100%;
-    font-size: 50px;
+    font-size: 13.15vh;
     text-align: right;
-    padding: 0 5px 0;
+    padding: 2.63vh 1.32vh 0;
 }
 table{
     border-collapse: collapse;
-    height: 300px;
+    height: 76vh;
 }
 table tr{
     height: 15vh;
@@ -86,7 +86,7 @@ table td{
     text-align: center;
     border: 2px solid whitesmoke;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 7vh;
     color: white;
 }
 table td:hover{
@@ -100,6 +100,9 @@ table td:hover{
     a{
         font-size: 40px;
     }
+}
+@media only screen and (orientation:portrait) {
+    
 }
 
 
