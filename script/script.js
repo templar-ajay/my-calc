@@ -70,6 +70,7 @@ function send(i){
 }
 
 function equals(){
+    let num ="";
     if(a&&b){
     if(operator2 == ""){
         result = a
@@ -78,15 +79,21 @@ function equals(){
         if (b == "0"){
             result = "cannot divide by zero"
         }else
-            result = parseFloat(o1+a)/parseFloat(b)
+            num =  parseFloat(o1+a)/parseFloat(b)
+            result = Math.round(num * 100) / 100
+
     }else if (operator2=="*"){
-        result = parseFloat(o1+a)*parseFloat(b)
+        num = parseFloat(o1+a)*parseFloat(b)
+        result = Math.round(num * 100) / 100
     }else if(operator2 == "%"){
-        result = parseFloat(o1+a)%parseFloat(b)
+        num = parseFloat(o1+a)%parseFloat(b)
+        result = Math.round(num * 100) / 100
     }else if(operator2 == "+"){
-        result = parseFloat(o1+a)+parseFloat(b)
+        num = parseFloat(o1+a)+parseFloat(b)
+        result = Math.round(num * 100) / 100
     }else if(operator2 == "-"){
-        result = parseFloat(o1+a) - parseFloat(b)
+        num = parseFloat(o1+a) - parseFloat(b)
+        result = Math.round(num * 100) / 100
     }
     clear()
     clipBoard = result
