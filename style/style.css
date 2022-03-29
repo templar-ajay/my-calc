@@ -48,7 +48,7 @@ a:active{
 #fa-logs , #fa-copy {
     height: 9.2vh;
     width: 9.2vh;
-    margin: 2.5px;
+    margin: 0.65vh;
     border-radius: 5px;
     border:none;
     cursor: pointer;
@@ -103,12 +103,12 @@ table td:hover{
 }
 @media only screen and (orientation:portrait) {
     .container{
-        height: 96vw;
-        width: 75vw;
+        height: 125vw;
+        width: 94vw;
     }
     #fa-logs , #fa-copy{
-        height: 9.2vw;
-        width: 9.2vw;
+        height: 12.2vw;
+        width: 12.2vw;
     }
     #fa-copy:active{
         width: 30px;
@@ -117,20 +117,21 @@ table td:hover{
         width: 30px
     }
     #display{
-        height: 20vw;
-        font-size: 13.15vh;
-        padding: 2.63vw 1.32vw 0;
+        height: 26.6vw;
+        font-size: 17.53vh;
+        padding: 3.51vw 1.76vw 0;
     }
     table{
-        height: 76vw;
+        height: 90vw;
     }
     table tr{
-        height: 15vw;
+        height: 19.5vw;
     }
     table td{
-        width: 24vw;
-        font-size: 7vw;
+        width: 32vw;
+        font-size: 9.3vw;
     }
+    
 }
 
 
