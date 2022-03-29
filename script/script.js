@@ -113,6 +113,7 @@ function clear(){
     dotPresentA = false
     dotPresentB = false
     displayOperator = ""
+    overflow = false
 }
 function allClear(){
     clear()
@@ -128,7 +129,7 @@ function ifFontChange(){
             Display.innerHTML = "plz reduce the input value"
             setTimeout(function(){
                Display.innerHTML = x} , 2200)
-        }
+        }else overflow = false
     }else Display.style.fontSize = "50px";
 }
 
@@ -152,12 +153,19 @@ function operatorDisplay(){
 function del(){
             if(a){
                 if(operator2){
-                    if(b){
-                        b = b.slice(0,-1)
-                    } else operator2 = ''
-                }else a = a.slice(0,-1)
+                    if(b){ if(b.charAt(b.length-1)=="."){
+                        b = b.slice(0,-1);
+                        dotPresentB = false;
+                    } else b = b.slice(0,-1) }
+                     else operator2 = ''
+                }else { if(a.charAt(a.length-1)=="."){
+                    a = a.slice(0,-1);
+                    dotPresentA = false;
+                }else a = a.slice(0,-1)}
+
             } else o1 = ''
     display()
+
 }
 
 function copy(){
