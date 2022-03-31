@@ -9,7 +9,7 @@ let operator2 = "";
 let o1 ="";
 let dotPresentA = false;
 let dotPresentB = false;
-let clipBoard;
+let clipBoard = "";
 let logInnerHTML = '';
 let overflow = false;
 let displayOperator ="";
@@ -43,11 +43,22 @@ document.addEventListener("keypress" , (e) => {
 
 //logic for calc
 function send(i){
+     // for continuation of calculation after equals
+    //  if((!a)&&(!b)&&(!o2)){
+    //     if ((i=="+")||(i=="-")||(i=="*")||(i=="/")||(i=="%")){
+            
+    //     if(clipBoard){
+    //         a = clipBoard
+    //         operator2 = i
+    //     }
+    // }
+    // }
     if(!overflow){
+            
 
-    if(((!o1)||(o1=="+"||o1=="-"))&&(i=="+"||i=="-")&&(!a)){
-        o1 = i
-    }
+            if(((!o1)||(o1=="+"||o1=="-"))&&(i=="+"||i=="-")&&(!a)){
+                o1 = i
+             }
     if((!operator2)&&(i!=="*")&&(i!=="/")&&(i!=="%")&&(i!=="+")&&(i!=="-")){
         if((a=="0")&&(i=="0")){
             a = i
